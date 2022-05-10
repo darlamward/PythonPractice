@@ -26,7 +26,7 @@ print("  Invoice#: {:<4s}                                      Date: {:>8s}".for
 print("{:^70}".format("-" * 66))  # center on page 66 * -
 print("   Customer: {:<30s}    Plate Number: {:>6s}".format(customer, plateNumber))
 print("   Address:  {:<30s}    Mileage:       {:>6d}".format(street, mileage))
-print("             {:<18s}, {:<2s}  {:<6s}".format(city, province, zip))  # print multiple variables on one line
+print("             {}, {:<2s}  {:<6s}".format(city, province, zip))  # print multiple variables on one line
 print()
 
 costOfPartsDsp = "${:,.2f}".format(costOfParts)  # set up as currency
