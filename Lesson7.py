@@ -3,10 +3,10 @@
 # Date Completed : 05-11-2022
 
 hourlyWage = 17.50
-widgetCommission = .35
-incomeTax = .21
-CPP = 0.0495
-EI = 0.016
+widgetCommissionRate = .35
+incomeTaxRate = .21
+CPPRate = 0.0495
+EIRate = 0.016
 unionDues = 15.00
 
 employeeName = input("Enter employee name: ")
@@ -20,13 +20,13 @@ widgetsProducedFriday = int(input("Enter the number of widgets produced on Frida
 
 totalWidgetsProduced = (widgetsProducedMonday + widgetsProducedTuesday + widgetsProducedWednesday
                         + widgetsProducedThursday + widgetsProducedFriday)
-commission = totalWidgetsProduced * widgetCommission
+commission = totalWidgetsProduced * widgetCommissionRate
 regularPay = hoursWorked * hourlyWage
 grossPay = regularPay + commission
 
-incomeTaxOnPay = grossPay * incomeTax
-CPPOnPay = grossPay * CPP
-EIOnPay = grossPay * EI
+incomeTaxOnPay = grossPay * incomeTaxRate
+CPPOnPay = grossPay * CPPRate
+EIOnPay = grossPay * EIRate
 
 totalDeductions = incomeTaxOnPay + CPPOnPay + EIOnPay + unionDues
 netPay = grossPay - totalDeductions
