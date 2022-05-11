@@ -2,7 +2,7 @@
 # Author: Darla Ward
 # Date Completed : 05-11-2022
 
-hourlyWage = 17.50
+hourlyPayRate = 17.50
 widgetCommissionRate = .35
 incomeTaxRate = .21
 CPPRate = 0.0495
@@ -21,7 +21,7 @@ widgetsProducedFriday = int(input("Enter the number of widgets produced on Frida
 totalWidgetsProduced = (widgetsProducedMonday + widgetsProducedTuesday + widgetsProducedWednesday
                         + widgetsProducedThursday + widgetsProducedFriday)
 commission = totalWidgetsProduced * widgetCommissionRate
-regularPay = hoursWorked * hourlyWage
+regularPay = hoursWorked * hourlyPayRate
 grossPay = regularPay + commission
 
 incomeTaxOnPay = grossPay * incomeTaxRate
@@ -31,7 +31,7 @@ EIOnPay = grossPay * EIRate
 totalDeductions = incomeTaxOnPay + CPPOnPay + EIOnPay + unionDues
 netPay = grossPay - totalDeductions
 
-hourlyWage = "${:,.2f}".format(hourlyWage)
+hourlyWage = "${:,.2f}".format(hourlyPayRate)
 regularPay = "${:,.2f}".format(regularPay)
 commission = "${:,.2f}".format(commission)
 grossPay = "${:,.2f}".format(grossPay)
