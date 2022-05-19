@@ -11,7 +11,7 @@ retailCost = round((itemCost * markUp), 2)
 oneDecRetailCost = round(retailCost, 1)
 roundedRetailCost = round(oneDecRetailCost)
 
-if roundedRetailCost < oneDecRetailCost:
+if roundedRetailCost <= oneDecRetailCost:
     FinalRetailCost = roundedRetailCost + 0.95
 else:
     FinalRetailCost = roundedRetailCost - .05
